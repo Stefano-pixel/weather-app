@@ -1,0 +1,33 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd ./config/variables.env node src/index.js",
+    "dev": "env-cmd ./config/variables.env nodemon src/index.js",
+    "test": "env-cmd ./config/variables.env tap --jobs=1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stefano-pixel/weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stefano-pixel/weather-app/issues"
+  },
+  "homepage": "https://github.com/Stefano-pixel/weather-app#readme",
+  "dependencies": {
+    "deep-equal": "^2.2.0",
+    "env-cmd": "^8.0.2",
+    "express": "^4.18.2",
+    "nock": "^13.3.0",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "supertest": "^3.4.1",
+    "tap": "^16.3.4"
+  }
+}
